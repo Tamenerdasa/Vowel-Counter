@@ -1,0 +1,33 @@
+from collections import Counter
+
+word = input("enter the string: ")
+
+vow = []
+
+vow_list = ['a','e','i','o','u']
+
+x = 0
+
+for i in range(len(word)):
+
+  for y in vow_list:
+
+    if word[i] == y:
+
+      x+=1
+
+      vow.append(y)
+
+    else:
+
+      continue
+
+print("The number of vowels in string is: {}".format(x))
+
+print("The list of the vowels are: {}".format(vow))
+
+ 
+
+vow_count = Counter(vow)
+
+print(vow_count)
